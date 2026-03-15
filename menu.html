@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Street Empires</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="page-dashboard page-menu">
+
+<!-- RESOURCES -->
+
+<div class="topbar">
+
+<a class="topbar-logo" href="menu.html"><span></span>EmpireStreets</a>
+
+<div class="resource">Cash: 12 450</div><div class="resource">Population: 86</div>
+<div class="resource">Steel: 120</div>
+<div class="resource">Chemicals: 45</div>
+<div class="resource">Electronics: 18</div>
+<div class="resource">Drugs: 60</div>
+
+</div>
+
+<canvas id="matrix"></canvas>
+
+<div class="corner-links">
+<a class="corner-link" href="leaderboard.html">Leaderboard</a>
+<a class="corner-link" href="settings.html">Settings</a>
+</div>
+
+
+<div class="container">
+
+<h1 class="section-title section-title-spaced menu-title">Menu hráče</h1>
+
+<!-- PLAYER PROFILE -->
+
+<div class="player-card">
+
+<img src="https://cdn.midjourney.com/4c0ea672-015c-4ef0-95cb-11d614d9dbee/0_1.png">
+
+<div class="player-info"><div class="player-name">PlayerX</div>
+
+<div class="stat">Gang: Night Wolves</div>
+<div class="stat">Sectors: 3</div>
+<div class="stat">Influence: 120</div></div>
+
+</div>
+
+<div class="player-actions">
+<a class="menu-item modal-open" href="#" data-modal="marketModal">Market</a>
+<a class="menu-item modal-open" href="#" data-modal="craftingModal">Crafting</a>
+</div>
+
+<!-- EVENTS -->
+
+<div class="events">
+
+<h3 class="section-title">City Events</h3>
+
+<div class="event">
+Cash transport spotted in Sector 42
+<div class="event-actions">
+<button class="event-btn accept">Accept</button>
+<button class="event-btn decline">Decline</button>
+</div>
+</div>
+
+<div class="event">
+Drug shipment arriving in Sector 17
+<div class="event-actions">
+<button class="event-btn accept">Accept</button>
+<button class="event-btn decline">Decline</button>
+</div>
+</div>
+
+<div class="event">
+Black market open for 18 minutes
+<div class="event-actions">
+<button class="event-btn accept">Accept</button>
+<button class="event-btn decline">Decline</button>
+</div>
+</div>
+
+<div class="event">
+Police raid in Sector 55
+<div class="event-actions">
+<button class="event-btn accept">Accept</button>
+<button class="event-btn decline">Decline</button>
+</div>
+</div>
+
+</div>
+
+
+<!-- MAIN MENU -->
+
+<div class="menu">
+
+<a class="menu-item" href="map.html">Map</a>
+<a class="menu-item" href="units.html">Units</a>
+<a class="menu-item" href="buildings.html">Buildings</a>
+<a class="menu-item" href="alliance.html">Alliance</a>
+
+</div>
+
+<div class="menu-link">
+<a class="menu-item" href="registrace.html">Back to Menu</a>
+</div>
+
+</div>
+
+<div class="glass-modal hidden" id="marketModal">
+<div class="glass-card">
+<div class="glass-header">
+<div>Market</div>
+<button class="glass-close" data-close="marketModal">×</button>
+</div>
+<div class="glass-links">
+<button class="glass-item" type="button">
+<strong>Buy Supplies</strong>
+<span>Restock steel, chemicals, electronics.</span>
+</button>
+<button class="glass-item" type="button">
+<strong>Sell Cargo</strong>
+<span>Offload excess stock for cash.</span>
+</button>
+<button class="glass-item" type="button">
+<strong>Auction House</strong>
+<span>Bid on rare lots and blueprints.</span>
+</button>
+<button class="glass-item" type="button">
+<strong>Smuggling Deals</strong>
+<span>High risk, high profit shipments.</span>
+</button>
+</div>
+</div>
+</div>
+
+<div class="glass-modal hidden" id="craftingModal">
+<div class="glass-card">
+<div class="glass-header">
+<div>Crafting</div>
+<button class="glass-close" data-close="craftingModal">×</button>
+</div>
+<div class="glass-links">
+<button class="glass-item" type="button">
+<strong>Weapon Mods</strong>
+<span>Boost damage and handling.</span>
+</button>
+<button class="glass-item" type="button">
+<strong>Armor Plates</strong>
+<span>Increase defense and durability.</span>
+</button>
+<button class="glass-item" type="button">
+<strong>Vehicle Tuning</strong>
+<span>Speed, armor, and loadout.</span>
+</button>
+<button class="glass-item" type="button">
+<strong>Consumables</strong>
+<span>Short buffs for raids.</span>
+</button>
+</div>
+</div>
+</div>
+
+  <script src="assets/js/menu.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

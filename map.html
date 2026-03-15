@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Street Empires - Map</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="page-map">
+
+<div class="topbar">
+
+<a class="topbar-logo" href="menu.html"><span></span>EmpireStreets</a>
+
+<div class="resource">Cash: 12450</div><div class="resource">Population: 86</div>
+<div class="resource">Steel: 120</div>
+<div class="resource">Chemicals: 45</div>
+<div class="resource">Electronics: 18</div>
+<div class="resource">Drugs: 60</div>
+
+</div>
+
+<div class="corner-links">
+<a class="corner-link" href="leaderboard.html">Leaderboard</a>
+<a class="corner-link" href="settings.html">Settings</a>
+</div>
+
+
+<div class="layout">
+
+<!-- LEFT MENU -->
+
+<div class="sidebar">
+<div class="sidebar-profile">
+<a href="menu.html">
+<img src="https://cdn.midjourney.com/4c0ea672-015c-4ef0-95cb-11d614d9dbee/0_1.png">
+</a>
+<a class="name" href="menu.html">PlayerX</a>
+</div>
+
+<div class="menu">
+<a class="menu-item active" href="map.html">Map</a>
+<a class="menu-item menu-open" href="#" data-panel="units">Units</a>
+<a class="menu-item menu-open" href="#" data-panel="quick-links">Crafting</a>
+<a class="menu-item menu-open" href="#" data-panel="quick-links">Buildings</a>
+<a class="menu-item menu-open" href="#" data-panel="quick-links">Alliance</a>
+</div>
+
+</div>
+
+
+<!-- MAP -->
+
+<div class="map-area">
+
+<div class="map-container">
+
+<div class="map-inner" id="mapInner">
+
+<img class="map-bg"
+src="https://cdn.midjourney.com/33ac5d4d-9f94-4dea-8110-e9b5b7b50539/0_2.png">
+
+<div class="grid" id="grid"></div>
+
+</div>
+
+<div class="controls">
+<div class="control-btn" id="zoomIn">+</div>
+<div class="control-btn" id="zoomOut">−</div>
+</div>
+
+<div class="popup" id="popup">
+
+<h4 id="sectorTitle">Sector</h4>
+
+<div>Owner: Neutral</div>
+<div>Buildings: Casino</div>
+
+<div class="button">Attack</div>
+<div class="button">Scout</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="glass-modal hidden" id="quickLinksModal">
+<div class="glass-card">
+<div class="glass-header">
+<div>Quick Links</div>
+<button class="glass-close" id="quickLinksClose">×</button>
+</div>
+<div class="glass-links">
+<a href="units.html">Units</a>
+<a href="#">Crafting</a>
+<a href="buildings.html">Buildings</a>
+<a href="alliance.html">Alliance</a>
+</div>
+</div>
+</div>
+
+<div class="glass-modal hidden" id="unitsModal">
+<div class="glass-card">
+<div class="glass-header">
+<div>Units</div>
+<button class="glass-close" id="unitsClose">×</button>
+</div>
+<div class="glass-links">
+<a href="#" class="unit-open" data-unit="soldiers">Vojáci</a>
+<a href="#" class="unit-open" data-unit="defenders">Obránce</a>
+<a href="#" class="unit-open" data-unit="weapons">Zbraně</a>
+<a href="#" class="unit-open" data-unit="vehicles">Auta</a>
+</div>
+</div>
+</div>
+
+<div class="glass-modal hidden" id="soldiersModal">
+<div class="glass-card">
+<div class="glass-header">
+<div>Vojáci</div>
+<button class="glass-close unit-close" data-close="soldiersModal">×</button>
+</div>
+<div class="glass-links">
+<a href="#">Pěchota</a>
+<a href="#">Odstřelovači</a>
+<a href="#">Speciál</a>
+</div>
+</div>
+</div>
+
+<div class="glass-modal hidden" id="defendersModal">
+<div class="glass-card">
+<div class="glass-header">
+<div>Obránce</div>
+<button class="glass-close unit-close" data-close="defendersModal">×</button>
+</div>
+<div class="glass-links">
+<a href="#">Stráž</a>
+<a href="#">Štíty</a>
+<a href="#">Protiútok</a>
+</div>
+</div>
+</div>
+
+<div class="glass-modal hidden" id="weaponsModal">
+<div class="glass-card">
+<div class="glass-header">
+<div>Zbraně</div>
+<button class="glass-close unit-close" data-close="weaponsModal">×</button>
+</div>
+<div class="glass-links">
+<a href="#">Pistole</a>
+<a href="#">Samopaly</a>
+<a href="#">Těžké</a>
+</div>
+</div>
+</div>
+
+<div class="glass-modal hidden" id="vehiclesModal">
+<div class="glass-card">
+<div class="glass-header">
+<div>Auta</div>
+<button class="glass-close unit-close" data-close="vehiclesModal">×</button>
+</div>
+<div class="glass-links">
+<a href="#">Dodávky</a>
+<a href="#">SUV</a>
+<a href="#">Obrněné</a>
+</div>
+</div>
+</div>
+
+
+<!-- RIGHT PANEL -->
+
+<div class="panel">
+
+<h3>City Events</h3>
+
+<div class="event">
+Cash transport spotted in Sector 42
+<div class="event-actions">
+<button class="event-btn accept">Accept</button>
+<button class="event-btn decline">Decline</button>
+</div>
+</div>
+
+<div class="event">
+Drug shipment arriving in Sector 17
+<div class="event-actions">
+<button class="event-btn accept">Accept</button>
+<button class="event-btn decline">Decline</button>
+</div>
+</div>
+
+<div class="event">
+Police raid in Sector 55
+<div class="event-actions">
+<button class="event-btn accept">Accept</button>
+<button class="event-btn decline">Decline</button>
+</div>
+</div>
+
+<h3 class="section-title section-title-spaced">Mini Map</h3>
+
+<div class="minimap">
+<img src="https://cdn.midjourney.com/33ac5d4d-9f94-4dea-8110-e9b5b7b50539/0_2.png">
+</div>
+
+</div>
+
+</div>
+
+
+  <script src="assets/js/map.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Street Empires - Buildings</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="page-dashboard page-buildings">
+
+<div class="topbar">
+
+<a class="topbar-logo" href="menu.html"><span></span>EmpireStreets</a>
+
+<div class="resource">Cash: 12 450</div><div class="resource">Population: 86</div>
+<div class="resource">Steel: 120</div>
+<div class="resource">Chemicals: 45</div>
+<div class="resource">Electronics: 18</div>
+<div class="resource">Drugs: 60</div>
+
+</div>
+
+<div class="corner-links">
+<a class="corner-link" href="leaderboard.html">Leaderboard</a>
+<a class="corner-link" href="settings.html">Settings</a>
+</div>
+
+
+<div class="container">
+
+<div class="content">
+
+<h3 class="section-title">Buildings</h3>
+
+<div class="building-cards">
+<button class="building-card building-category active" data-category="economy">Ekonomie</button>
+<button class="building-card building-category" data-category="production">Výroba</button>
+<button class="building-card building-category" data-category="army">Army</button>
+<button class="building-card building-category" data-category="garage">Garage</button>
+<button class="building-card building-category" data-category="population">Population</button>
+</div>
+
+<div class="building-cards building-list">
+<button class="building-card building-link" data-category="production" data-title="Steel Foundry" data-level="3" data-output="+12/h" data-storage="-" data-upgrade-time="1h 45m">
+Steel Foundry
+<span class="building-meta">Level 3 • Output +12/h</span>
+</button>
+<button class="building-card building-link" data-category="production" data-title="Chem Lab" data-level="2" data-output="+5/h" data-storage="-" data-upgrade-time="2h 10m">
+Chem Lab
+<span class="building-meta">Level 2 • Output +5/h</span>
+</button>
+<button class="building-card building-link" data-category="production" data-title="Electronics Hub" data-level="1" data-output="+2/h" data-storage="-" data-upgrade-time="2h 40m">
+Electronics Hub
+<span class="building-meta">Level 1 • Output +2/h</span>
+</button>
+<button class="building-card building-link" data-category="economy" data-title="Warehouse" data-level="4" data-output="-" data-storage="+40%" data-upgrade-time="3h 20m">
+Warehouse
+<span class="building-meta">Level 4 • Storage +40%</span>
+</button>
+<button class="building-card building-link" data-category="army" data-title="Safehouse" data-level="2" data-output="-" data-storage="-" data-upgrade-time="1h 10m">
+Safehouse
+<span class="building-meta">Level 2 • Defense +8</span>
+</button>
+</div>
+
+<div class="building-empty" id="buildingEmpty">Žádné budovy v této kategorii.</div>
+
+<div class="queue">
+Construction Queue: Warehouse Lv.5 (1h 24m), Chem Lab Lv.3 (4h 10m)
+</div>
+
+</div>
+
+<div class="glass-modal hidden" id="buildingModal">
+<div class="glass-card">
+<div class="glass-header">
+<div id="buildingModalTitle">Building</div>
+<button class="glass-close" id="buildingModalClose">×</button>
+</div>
+<div class="glass-links building-info">
+<div><span>Level</span><strong id="buildingModalLevel">-</strong></div>
+<div><span>Output / h</span><strong id="buildingModalOutput">-</strong></div>
+<div><span>Storage</span><strong id="buildingModalStorage">-</strong></div>
+<div><span>Time to Upgrade</span><strong id="buildingModalTime">-</strong></div>
+</div>
+</div>
+</div>
+
+
+<div class="menu">
+
+<a class="menu-profile" href="menu.html">
+<img src="https://cdn.midjourney.com/4c0ea672-015c-4ef0-95cb-11d614d9dbee/0_1.png">
+<span class="name">PlayerX</span>
+</a>
+
+<a class="menu-item" href="map.html">Map</a>
+<a class="menu-item" href="units.html">Units</a>
+<a class="menu-item active" href="buildings.html">Buildings</a>
+<a class="menu-item" href="alliance.html">Alliance</a>
+
+</div>
+
+</div>
+
+<script src="assets/js/buildings.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

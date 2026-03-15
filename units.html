@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Street Empires - Units</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="page-dashboard page-units">
+
+<div class="topbar">
+
+<a class="topbar-logo" href="menu.html"><span></span>EmpireStreets</a>
+
+<div class="resource">Cash: 12 450</div><div class="resource">Population: 86</div>
+<div class="resource">Steel: 120</div>
+<div class="resource">Chemicals: 45</div>
+<div class="resource">Electronics: 18</div>
+<div class="resource">Drugs: 60</div>
+
+</div>
+
+<div class="corner-links">
+<a class="corner-link" href="leaderboard.html">Leaderboard</a>
+<a class="corner-link" href="settings.html">Settings</a>
+</div>
+
+
+<div class="container">
+
+<div class="content">
+
+<h3 class="section-title">Units</h3>
+
+<div class="units-cards">
+<button class="unit-card unit-category active" data-category="soldiers">
+<div class="unit-title">Vojáci</div>
+<div class="unit-desc">Pěchota, odstřelovači, speciální jednotky.</div>
+</button>
+<button class="unit-card unit-category" data-category="defenders">
+<div class="unit-title">Obránce</div>
+<div class="unit-desc">Stráž, štíty, protiútok.</div>
+</button>
+<button class="unit-card unit-category" data-category="weapons">
+<div class="unit-title">Zbraně</div>
+<div class="unit-desc">Pistole, samopaly, těžké zbraně.</div>
+</button>
+<button class="unit-card unit-category" data-category="vehicles">
+<div class="unit-title">Auta</div>
+<div class="unit-desc">Dodávky, SUV, obrněné vozy.</div>
+</button>
+</div>
+
+<div class="units-cards unit-list">
+<button class="unit-card unit-link" data-category="soldiers" data-title="Street Runners" data-level="2" data-bonus="Speed +12%" data-role="Light Assault" data-train-time="1h 20m">
+<div class="unit-title">Street Runners</div>
+<div class="unit-meta">Level 2 • Speed +12%</div>
+</button>
+<button class="unit-card unit-link" data-category="defenders" data-title="Enforcers" data-level="3" data-bonus="Defense +18%" data-role="Defense" data-train-time="2h 05m">
+<div class="unit-title">Enforcers</div>
+<div class="unit-meta">Level 3 • Defense +18%</div>
+</button>
+<button class="unit-card unit-link" data-category="defenders" data-title="Shield Wardens" data-level="2" data-bonus="Block +12%" data-role="Defense" data-train-time="1h 40m">
+<div class="unit-title">Shield Wardens</div>
+<div class="unit-meta">Level 2 • Block +12%</div>
+</button>
+<button class="unit-card unit-link" data-category="defenders" data-title="Barricade Crew" data-level="1" data-bonus="Fortify +9%" data-role="Defense" data-train-time="1h 15m">
+<div class="unit-title">Barricade Crew</div>
+<div class="unit-meta">Level 1 • Fortify +9%</div>
+</button>
+<button class="unit-card unit-link" data-category="vehicles" data-title="Smugglers" data-level="1" data-bonus="Cargo +6%" data-role="Support" data-train-time="1h 05m">
+<div class="unit-title">Smugglers</div>
+<div class="unit-meta">Level 1 • Cargo +6%</div>
+</button>
+<button class="unit-card unit-link" data-category="weapons" data-title="Hackers" data-level="2" data-bonus="Intel +10%" data-role="Intel" data-train-time="2h 35m">
+<div class="unit-title">Hackers</div>
+<div class="unit-meta">Level 2 • Intel +10%</div>
+</button>
+<button class="unit-card unit-link" data-category="weapons" data-title="Arms Dealers" data-level="2" data-bonus="Firepower +9%" data-role="Supply" data-train-time="1h 55m">
+<div class="unit-title">Arms Dealers</div>
+<div class="unit-meta">Level 2 • Firepower +9%</div>
+</button>
+<button class="unit-card unit-link" data-category="weapons" data-title="Heavy Crew" data-level="1" data-bonus="Explosives +7%" data-role="Heavy" data-train-time="2h 20m">
+<div class="unit-title">Heavy Crew</div>
+<div class="unit-meta">Level 1 • Explosives +7%</div>
+</button>
+<button class="unit-card unit-link" data-category="soldiers" data-title="Raid Squad" data-level="1" data-bonus="Attack +8%" data-role="Assault" data-train-time="1h 45m">
+<div class="unit-title">Raid Squad</div>
+<div class="unit-meta">Level 1 • Attack +8%</div>
+</button>
+<button class="unit-card unit-link" data-category="vehicles" data-title="Armored Convoy" data-level="2" data-bonus="Defense +11%" data-role="Escort" data-train-time="2h 50m">
+<div class="unit-title">Armored Convoy</div>
+<div class="unit-meta">Level 2 • Defense +11%</div>
+</button>
+<button class="unit-card unit-link" data-category="vehicles" data-title="Interceptor Vans" data-level="1" data-bonus="Speed +10%" data-role="Pursuit" data-train-time="1h 30m">
+<div class="unit-title">Interceptor Vans</div>
+<div class="unit-meta">Level 1 • Speed +10%</div>
+</button>
+</div>
+
+<div class="unit-empty" id="unitEmpty">Žádné jednotky v této kategorii.</div>
+
+<div class="unit-queue">
+Training Queue: Enforcers Lv.4 (2h 05m), Hackers Lv.3 (3h 45m)
+</div>
+
+</div>
+
+<div class="glass-modal hidden" id="unitModal">
+<div class="glass-card">
+<div class="glass-header">
+<div id="unitModalTitle">Unit</div>
+<button class="glass-close" id="unitModalClose">×</button>
+</div>
+<div class="glass-links unit-info">
+<div><span>Level</span><strong id="unitModalLevel">-</strong></div>
+<div><span>Bonus</span><strong id="unitModalBonus">-</strong></div>
+<div><span>Role</span><strong id="unitModalRole">-</strong></div>
+<div><span>Time to Train</span><strong id="unitModalTime">-</strong></div>
+</div>
+</div>
+</div>
+
+
+<div class="menu">
+
+<a class="menu-profile" href="menu.html">
+<img src="https://cdn.midjourney.com/4c0ea672-015c-4ef0-95cb-11d614d9dbee/0_1.png">
+<span class="name">PlayerX</span>
+</a>
+
+<a class="menu-item" href="map.html">Map</a>
+<a class="menu-item active" href="units.html">Units</a>
+<a class="menu-item" href="buildings.html">Buildings</a>
+<a class="menu-item" href="alliance.html">Alliance</a>
+
+</div>
+
+</div>
+
+<script src="assets/js/units.js"></script>
+</body>
+</html>
+
+
+
+
+
