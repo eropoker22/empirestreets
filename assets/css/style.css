@@ -797,6 +797,15 @@ z-index:10;
 padding:0 16px;
 }
 
+.page-map .topbar-resources{
+margin-left:auto;
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+justify-content:flex-end;
+margin-right:50px;
+}
+
 .page-map .layout{
 display:grid;
 grid-template-columns:220px 1fr 260px;
