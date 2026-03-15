@@ -1929,6 +1929,71 @@ font-size:28px;
 }
 }
 
+@media (max-width: 430px){
+body{
+font-size:14px;
+}
+
+.topbar{
+padding:8px 10px;
+gap:8px;
+}
+
+.topbar-logo{
+font-size:18px;
+}
+
+.resource{
+font-size:11px;
+padding:4px 7px;
+}
+
+.corner-link{
+font-size:11px;
+padding:4px 7px;
+}
+
+.page-dashboard .container{
+padding:0 10px;
+}
+
+.page-dashboard .menu-item{
+font-size:15px;
+padding:10px 10px;
+}
+
+.page-dashboard .player-card{
+padding:0;
+}
+
+.page-dashboard .player-info{
+padding:10px 12px;
+}
+
+.page-menu .events{
+padding:12px;
+}
+
+.page-map .map-area{
+padding:10px;
+}
+
+.page-map .controls{
+right:10px;
+bottom:10px;
+}
+
+.page-map .control-btn{
+padding:10px;
+font-size:16px;
+}
+
+.page-registrace .container{
+width:92%;
+padding:22px;
+}
+}
+
 @media (min-width: 901px){
 .corner-links{
 position:fixed;
