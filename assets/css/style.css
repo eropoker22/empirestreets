@@ -1446,13 +1446,6 @@ max-width:100%;
 max-width:100%;
 }
 
-.corner-links{
-position:static;
-width:100%;
-justify-content:center;
-margin:8px auto 0;
-}
-
 .page-map .topbar{
 position:static;
 }
@@ -1481,6 +1474,7 @@ order:99;
 margin-top:auto;
 justify-content:center;
 gap:10px;
+width:100%;
 }
 
 body.page-dashboard{
@@ -1802,6 +1796,16 @@ margin-left:0;
 margin-right:20px;
 }
 
+.page-menu .player-card,
+.page-menu .player-actions,
+.page-menu .events,
+.page-menu .menu,
+.page-menu .menu-link{
+width:100%;
+max-width:100%;
+margin:0 auto;
+}
+
 .page-menu .events{
 max-width:90%;
 width:100%;
@@ -1865,6 +1869,19 @@ border-left:none;
 border-top:1px solid var(--accent-30);
 }
 
+.page-map .corner-links{
+position:static;
+width:100%;
+justify-content:center;
+margin:8px auto 0;
+}
+
+.page-map .popup{
+right:12px;
+top:12px;
+width:min(220px, 90%);
+}
+
 .page-map .controls{
 right:12px;
 bottom:12px;
@@ -1912,6 +1929,7 @@ font-size:28px;
 }
 }
 
+@media (min-width: 901px){
 .corner-links{
 position:fixed;
 top:auto;
@@ -1931,32 +1949,5 @@ padding:5px 8px;
 right:50px;
 left:auto;
 justify-content:flex-end;
-}
-
-@media (max-width: 900px){
-.topbar{
-position:static;
-height:auto;
-}
-
-.corner-links,
-.page-menu .corner-links{
-position:static;
-right:auto;
-left:auto;
-width:100%;
-justify-content:center;
-margin:8px auto 0;
-}
-
-.page-map .topbar,
-.page-registrace .topbar{
-position:static;
-}
-
-.page-map .popup{
-right:12px;
-top:12px;
-width:min(220px, 90%);
 }
 }
